@@ -7,7 +7,7 @@ read -r tool
 deps="git make gcc pkgconf libxft xorg-xinit libxinerama xlibre-xserver ttf-hack ttf-terminus-nerd maim xclip xdg-utils"
 $tool pacman -S --needed --noconfirm $deps
 
-git clone https://github.com/larpingston/suckless
+git clone https://github.com/tvreaa/suckless
 
 cd suckless
 cd dwm && $tool make clean install && cd ..
