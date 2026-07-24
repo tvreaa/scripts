@@ -1,9 +1,9 @@
 #!/bin/sh
 
 operationdir="$HOME"
-root="doas"
+root="doas" # you may want to change doas with sudo 
 install="pacman -S --noconfirm"
-sucklessrepo="https://github.com/tvreaa/suckless"
+sucklessrepo="https://github.com/tvreaa/suckless" # my builds of suckless programs, dwm st dwmblocks dmenu
 sucklessdir="$operationdir/suckless"
 DirDwm="$operationdir/suckless/dwm"
 DirSt="$operationdir/suckless/st"

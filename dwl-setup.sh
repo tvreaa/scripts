@@ -4,15 +4,14 @@
 # based dotfiles for those who hate hyprbloat ^_^
 #
 
-operationdir="$HOME"  # change these based on your distro and root escalation tool
-root="doas"           # you may want to change doas with sudo
+operationdir="$HOME" 
+root="doas" # you may want to change doas with sudo
 install="pacman -S --noconfirm"
 
 # wm part
 wmrepo="https://github.com/tvreaa/dwl" # my modified version of dwl, read config.h for binds and stuff
 wmdir="$operationdir/dwl"
 wmcompile="$root make clean install"
-# change package names based on your distro aswell
 wmdeps="
 git
 gcc
@@ -73,7 +72,7 @@ mako(){
   moveconf="$HOME/.config/"
 }
 dwlsh(){
-  conf="dwl.sh"    # greeters are bloat lads
+  conf="dwl.sh" # greeters are bloat
   moveconf="$HOME"
 }
 
@@ -109,7 +108,7 @@ chmod +x "$operationdir/dwl.sh"
 bmtxt
 emojitxt
 clear
-echo"run 'sh dwl.sh' and pray it works😭"
+echo"run 'sh dwl.sh' and pray it works"
 
 #
 # gay
