@@ -30,6 +30,13 @@ ttf-hack
 ttf-terminus-nerd
 wmenu
 xdg-utils
+pixman
+xdg-user-dirs
+wl-clipboard
+xcb-util-wm
+libdrm
+mesa
+awww
 "
 installwmdeps(){
   $root $install $wmdeps
@@ -62,7 +69,7 @@ clonedotsrepo(){
 }
 
 foot(){
-  packages="foot" # until i find st port for wayland that actually works
+  packages="foot"   
   conf="foot"
   moveconf="$HOME/.config/"
 }
