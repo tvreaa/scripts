@@ -5,13 +5,24 @@
             # but for now this script only installs suckless programs.
 
 
+
+root="sudo" # you may want to change this to doas
+
+# you may want to change xlibre-xserver with xorg-server if its not in your repo
+# also change install command and package names according to your distribution 
+deps="gcc pkgconf make git libx11 libxft libxinerama xorg-xinit xlibre-xserver xclip maim"
+install="$root pacman -S --needed --noconfirm $deps"
+
 OperationDir="$HOME"
-root="sudo"
 repo="https://github.com/tvreaa/suckless" # git repo for my suckless programs
 compile="$root make clean install"
 
+InstallDeps(){
+  $install
+}
+
 RemoveExisting(){
-  rm -r "$OperationDir/suckless"
+  rm -rf "$OperationDir/suckless"
 }
 
 clone(){
@@ -42,6 +53,7 @@ build(){
   printf "%s" "[log] compilation complete"
 }
 
+InstallDeps
 RemoveExisting
 clone
 build
