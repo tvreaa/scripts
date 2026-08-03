@@ -1,10 +1,10 @@
 #!/bin/sh
 
 outdir="$HOME/vids"
-fps=30
-crf=18
-preset=ultrafast
-abitrate=128k
+fps=60
+crf=20
+preset=veryfast
+abitrate=192k
 msg_start="started"
 msg_pause="paused"
 msg_resume="resumed"
@@ -13,10 +13,10 @@ msg_already="already recording"
 msg_nothing="not recording"
 menu_fn_x11="Hack:size=12"
 menu_fn_wl="Hack 12"
-menu_nb="222222"
+menu_nb="0d0d0d"
 menu_nf="bbbbbb"
-menu_sb="BEB58F"
-menu_sf="222222"
+menu_sb="101010"
+menu_sf="e2e2e2"
 menu_lines=5
 pidfile=/tmp/rec.pid
 pausefile=/tmp/rec.paused
