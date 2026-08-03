@@ -27,7 +27,7 @@ RemoveExisting(){
 
 clone(){
   git clone "$repo" "$OperationDir/suckless"
-  printf "%s" "[log] cloned repo in $OperationDir/suckless"
+  printf "%s\n" "[log] cloned repo in $OperationDir/suckless"
 }
 
 build(){
@@ -50,11 +50,11 @@ build(){
 
   cd "$OperationDir"
 
-  printf "%s" "[log] compilation complete"
+  printf "%s\n" "[log] compilation complete"
 }
 
 InstallDeps
 RemoveExisting
 clone
 build
-printf "%s" "[log] installation complete"
+printf "%s\n" "[log] installation complete"
